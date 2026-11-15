@@ -1,0 +1,77 @@
+1. USE CASE/REAL TIME REQUIREMENT FOR DATA STORAGE AND MANIPULATION:
+	- MULTIPLE DATA TO STORE
+	- FIXED NUMBER OF DATA TO STORE.
+	- A PARTICULAR CATEGORY OF DATA TO STORE.
+SOLUTION: ARRAY
+
+2. USE CASE/REAL TIME REQUIREMENT FOR DATA STORAGE AND MANIPULATION:
+	- MULTIPLE DATA TO STORE
+	- UNLIMITED NUMBER OF DATA TO STORE.
+	- DIFFERENT TYPES OF DATA TO STORE.
+SOLUTION: COLLECTIONS & MAPS FRAMEWORK 
+
+FRAMEWORK: 
+LOGICALLY, IS A SET OF RULES AND GUIDELINES DESIGNED FOR A PARTICULAR REQUIREMENT/TASK.
+TECHNICALLY, IS A SET OF CLASSES AND INTERFACES(API) DESIGNED FOR A PARTICULAR REQUIREMENT/TASK.
+
+COLLECTIONS FRAMEWORK:
+	- IS A SET OF CLASSES AND INTERFACES (API) WHICH ARE SPECIFICALLY DESIGNED TO STORE AND MANIPULATE ARBITRARY OBJECTS.
+	- IS PART OF java.util PACKAGE.
+	- WHILE USING COLLECTIONS, WE NEED TO STORE DATA IN OBJECTS AND NOT IN VARIABLES REPRESENTED BY DATA TYPES BECAUSE OBJECT HAS:
+		- NO FIXED SIZE
+		- NO FIXED TYPE
+	- GENERAL-PURPOSE IMPLEMENTATIONS:
+		1. HashSet
+		- does not maintain any order while storing objects i.e. it is unordered.
+		- stores unique values i.e. does not store multiple objects of same type containing same values.
+		- no indexing is maintained.
+		- uses hash table data structure.
+
+		2. LinkedHashSet
+		- maintains an insertion order while storing objects.
+		- stores unique values i.e. does not store multiple objects of same type containing same values.
+		- no indexing is maintained.
+		- uses hash table and linked list data structures.
+
+		3. TreeSet
+		- follows a natural order of sorting while storing objects.
+		- stores unique values i.e. does not store multiple objects of same type containing same values.
+		- no indexing is maintained.
+		- objects of a particular type are stored at a time in a treeset. i.e. one treeset = one type of object.
+		- uses self-balancing binary search tree (red-black tree) data structure.
+
+		4. ArrayList
+		- maintains an insertion order while storing objects.
+		- stores duplicate values i.e. does store multiple objects of same type containing same values.
+		- indexing is maintained.
+		- allows index-based access.
+		- uses resizable array data structure.
+
+		5. LinkedList
+		- maintains an insertion order while storing objects.
+		- stores duplicate values i.e. does store multiple objects of same type containing same values.
+		- indexing is maintained.
+		- allows index-based access.
+		- uses doubly-linked list data structure.
+
+		6. Vector
+		- maintains an insertion order while storing objects.
+		- stores duplicate values i.e. does store multiple objects of same type containing same values.
+		- indexing is maintained.
+		- allows index-based access.
+		- uses resizable array data structure.
+		- is a thread-safe class.
+		
+		7. PriorityQueue
+		- stores objects based on their priority by using natural ordering as default ordering.
+		- stores duplicate values i.e. does store multiple objects of same type containing same values.
+		- no indexing is maintained.
+		- objects of a particular type are stored at a time in a priorityqueue. i.e. one priorityqueue = one type of object.
+		- uses binary heap data structure.
+		
+		8. ArrayDeque
+		- can be used as a queue(FIFO) and as a stack(LIFO)
+		- stores objects either following the First-In-First-Out (FIFO) or Last-In-First-Out (LIFO) order.		
+		- stores duplicate values i.e. does store multiple objects of same type containing same values.
+		- no indexing is maintained.
+		- uses resizable array data structure.
